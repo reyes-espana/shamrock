@@ -1,0 +1,16 @@
+on: 
+  push:
+    branches-ignore:
+      - "canary"
+    branches: 
+     - master
+     - 'dev**'
+
+jobs:
+  run-tests:
+    runs-on: windows
+    
+    steps: 
+      - name: run tests
+        run: ng test
+    
