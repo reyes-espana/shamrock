@@ -13,4 +13,4 @@ jobs:
     steps: 
       - uses: actions/checkout@v3
       - name: run tests
-        run: ng test
+        run: npm install -g @angular/cli && npm i && ng test
