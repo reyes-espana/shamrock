@@ -8,9 +8,13 @@ on:
 
 jobs:
   run-tests:
+    name: Run Tests
     runs-on: windows-latest
     
     steps: 
       - uses: actions/checkout@v3
+      - uses: actions/setup-node@v4
+        with: 
+          node-version: '20'
       - name: run tests
         run: npm install -g @angular/cli && npm i && ng test
