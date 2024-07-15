@@ -10,5 +10,4 @@ jobs:
     
     steps: 
       - name: run tests
-        run: npm install && ng test
-    
+        run: npm install -g @angular/cli && ng test
