@@ -1,6 +1,6 @@
 # Build configuration
 build = {
-  command = "npm run build:ssr --prod && ng run Shamrock:serverless:production"
+  command = "npm run build:ssr"
   commandOrigin = "config"
   environment = ["CI"]  # Wrap CI in quotes for clarity
   publish = "/opt/build/repo/dist/Shamrock/browser"
