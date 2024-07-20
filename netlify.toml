@@ -1,2 +1,6 @@
 [build]
-command = “CI= npm run build”
+  command = "npm run build:ssr --prod && ng run Shamrock:serverless:production"
+  publish = "dist/Shamrock/browser"
+
+[[plugins]]
+  package = "@netlify/plugin-angular-universal"
