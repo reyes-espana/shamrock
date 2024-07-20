@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
+import MenuIcon from '@mui/icons-material/Menu';
 
 @Component({
   selector: 'app-root',
