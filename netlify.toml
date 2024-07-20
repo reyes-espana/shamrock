@@ -1,6 +1,14 @@
-[build]
-  command = "npm run build:ssr --prod && ng run Shamrock:serverless:production"
-  publish = "dist/Shamrock/browser"
-
-[[plugins]]
-  package = "@netlify/plugin-angular-universal"
+build:
+    command: npm run build:ssr --prod && ng run Shamrock:serverless:production
+    commandOrigin: config
+    environment:
+        - CI
+    publish: /opt/build/repo/dist/Shamrock/browser
+    publishOrigin: config
+plugins:
+    - inputs: {}
+    origin: ui
+    package: '@netlify/angular-runtime'
+    - inputs: {}
+    origin: config
+    package: '@netlify/plugin-angular-universal'
