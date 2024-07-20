@@ -4,7 +4,6 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
 import { MatSidenavModule } from '@angular/material/sidenav'
-import MatThemingModule from '@angular/material/core';
 import { MatToolbarModule } from '@angular/material/toolbar'
 
 import { AppRoutingModule } from './app-routing.module';
