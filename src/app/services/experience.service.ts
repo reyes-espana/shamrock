@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject, map } from 'rxjs';
 import { Experience, Location, Responsibility } from './experience.types';
 import * as exp from '../utils/experiences.json';
 
