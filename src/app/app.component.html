@@ -1,22 +1,2 @@
-<mat-toolbar class="toolbar">
-  <button mat-icon-button class="menu-button" aria-label="Open Side Navigation" (click)="sideNav.toggle()">
-    <mat-icon></mat-icon>
-  </button>
-  
-  <h1>Resume</h1>
-</mat-toolbar> 
 
-<mat-sidenav-container>
-
-  <mat-sidenav class="sideNavCont"  #sideNav mode="side" [(opened)]="opened">
-    <div class="sideNav">
-      <button mat-button routerLink="/about-me">About Me</button>
-      <button mat-button routerLink="/experience">Experience</button>
-    </div>
-  </mat-sidenav>
-
-  <mat-sidenav-content>
     <router-outlet></router-outlet>
-  </mat-sidenav-content>
-
-</mat-sidenav-container>
